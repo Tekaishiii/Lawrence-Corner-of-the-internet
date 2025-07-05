@@ -1,0 +1,90 @@
+title: Lawrence's Little Internet Corner
+description: A cozy corner for my poems and writings.
+baseurl: ""
+url: ""
+---
+layout: default
+title: Home
+---
+
+<h1>Welcome to Lawrence's Little Internet Corner</h1>
+<p>Here, words find a home. From verses that echo the whispers of my heart to stories woven in quiet moments — this is where my writings live and breathe.</p>
+<img src="/assets/images/logo.jpg" alt="Site Logo" style="max-width: 200px;">
+<p><a href="/poems.html">Read My Poems</a></p>
+theme: minima---
+layout: default
+title: About
+---
+
+# About Me
+
+Hi! I'm Lawrence. This is my little corner of the internet where I share my poems and thoughts.
+---
+layout: default
+title: Poems
+---
+
+# My Poems
+
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/images/logo.jpg" alt="Logo" style="max-width: 100px;">
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/poems.html">Poems</a> |
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
+body {
+  font-family: Georgia, serif;
+  background: #ffffff;
+  color: #333;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+}
+
+nav a:hover {
+  text-decoration: underline;
+---
+layout: default
+title: My First Poem
+---
+
+This is my first poem on my site.
+
+Roses are red,  
+Violets are blue,  
+This little corner,  
+Is just for you.
+}
